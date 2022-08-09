@@ -1,0 +1,32 @@
+{
+    "chrome": {
+        "default": "103.0",
+        "versions": {
+            "102.0": {
+                "image": "selenoid/chrome:102.0",
+                "port": "4444",
+                "path": "/"
+            },
+            "103.0": {
+                "image": "selenoid/chrome:103.0",
+                "port": "4444",
+                "path": "/"
+            }
+        }
+    },
+    "firefox": {
+        "default": "102.0",
+        "versions": {
+            "101.0": {
+                "image": "selenoid/firefox:101.0",
+                "port": "4444",
+                "path": "/wd/hub"
+            },
+            "102.0": {
+                "image": "selenoid/firefox:102.0",
+                "port": "4444",
+                "path": "/wd/hub"
+            }
+        }
+    }
+}

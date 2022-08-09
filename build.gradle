@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+    id 'io.qameta.allure' version '2.10.0'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+//
+//ext {
+//    junitVersion = '5.9.0'
+//}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
+    testImplementation 'com.codeborne:selenide:6.6.5'
+    testImplementation 'io.qameta.allure:allure-java-commons:2.18.1'
+    testImplementation 'io.qameta.allure:allure-selenide:2.18.1'
+    testImplementation 'io.qameta.allure:allure-junit5:2.18.1'
+    runtimeOnly 'org.slf4j:slf4j-simple:1.7.36'
+
+}
+
+
+
+test {
+    useJUnitPlatform()
+}
+
+allure {
+    version = '2.18.1'
+}
