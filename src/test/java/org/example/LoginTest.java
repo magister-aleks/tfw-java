@@ -30,7 +30,8 @@ public class LoginTest {
         Configuration.browser = "firefox";
         Configuration.headless = true;
         Configuration.timeout = 10000;
-        open("https://device-model-ui.dev.dt.conmob.cloud/");
+//        open("https://device-model-ui.dev.dt.conmob.cloud/");
+        open("https://httpbin.org/");
     }
 
     @Test
