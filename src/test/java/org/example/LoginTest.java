@@ -10,6 +10,7 @@ import org.openqa.selenium.By;
 import org.slf4j.Logger;
 
 
+import static com.codeborne.selenide.CollectionCondition.size;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
@@ -44,6 +45,7 @@ public class LoginTest {
         $(By.id("username")).shouldBe(visible).setValue(username);
         $(By.id("password")).shouldBe(visible).setValue(password);
         $(By.id("kc-login")).shouldBe(visible).click();
+        $$(".icon-user").shouldHave(size(1));
         $(".icon-user").shouldBe(visible);
         $(".navigation-bar-item--right").shouldHave(text(USERNAME));
         log.info("Login as {}", username);
