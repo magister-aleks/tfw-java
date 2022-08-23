@@ -32,7 +32,7 @@ public class LoginTest {
         Configuration.timeout = 10000;
         log.info("Message debug");
 //        open("https://device-model-ui.dev.dt.conmob.cloud/");
-        open("https://httpbin.org/");
+//        open("https://httpbin.org/");
     }
 
     @Test
